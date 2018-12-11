@@ -1,0 +1,1 @@
+require('./scripts/same-size');

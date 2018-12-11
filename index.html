@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>test</title>
+        <style>
+        .split {
+            width:32%;
+            display:block;
+            float:left;
+        }
+        .border {
+            border:1px solid black;
+        }
+        .row:after {
+            content:" ";
+            clear:both;
+        }
+        </style>
+    </head>
+    <body><script src="./dist/jquery-3.3.1.js"></script>
+    <body><script src="./dist/jquery-helpers.js"></script>
+        <div class="row">
+            <div class="split border" data-same-height="group-1"></div>
+            <div class="split border" data-same-height="group-1">blah</div>
+            <div class="split border" data-same-height="group-1"></div>
+        </div>
+        <div class="row">
+            <div class="split border" data-same-height="group-2"></div>
+            <div class="split border" data-same-height="group-2">blah</div>
+            <div class="split border" data-same-height="group-2">blahed<br>blahed</div>
+        </div>
+    </body>
+</html>
